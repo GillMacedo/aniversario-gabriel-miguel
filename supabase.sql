@@ -18,7 +18,9 @@ create policy "convidados podem confirmar"
   to anon
   with check (true);
 
+grant usage on schema public to anon;
 grant insert on public.confirmacoes to anon;
+grant usage on sequence public.confirmacoes_id_seq to anon;
 
 -- Resumo para consultar no painel (Table Editor ou SQL):
 --   select nome, adultos, criancas, recado, criado_em from confirmacoes order by criado_em;
