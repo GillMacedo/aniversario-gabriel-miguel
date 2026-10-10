@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aniversário Gabriel &amp; Miguel</title>
+<meta name="description" content="Sábado, 28 de novembro, às 14h, no Condomínio Vista Verde. Confirme sua presença!">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aniversário Gabriel & Miguel 🦖">
+<meta property="og:description" content="Sábado, 28/11 às 14h · Condomínio Vista Verde, Indaiatuba. Confirme sua presença!">
+<meta property="og:image" content="https://gillmacedo.github.io/aniversario-gabriel-miguel/capa.jpg">
+<meta property="og:image:width" content="700">
+<meta property="og:image:height" content="923">
+<meta name="theme-color" content="#2E8B4E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --leaf:#2E8B4E; --leaf-dark:#1F6B3A; --lime:#7CC35A; --orange:#E8692A; --orange-dark:#B5501A;
+  --sun:#FFD34E; --ground:#FFF6E0; --ink:#24331F; --muted:#4E5A47; --card:#FFFFFF; --line:#E9DCB8;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--ground);color:var(--ink);font-family:'Fredoka',system-ui,sans-serif;font-size:18px;line-height:1.45;-webkit-font-smoothing:antialiased}
+.page{max-width:480px;margin:0 auto;position:relative;overflow:hidden;padding:0 16px}
+.web{position:absolute;left:0;top:0;width:170px;height:205px;pointer-events:none}
+.dino-top{position:absolute;right:10px;top:46px;width:100px;transform:scaleX(-1) rotate(-6deg)}
+.badge{display:block;width:max-content;margin:24px auto 0;padding:8px 20px;background:var(--sun);border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.12em;text-transform:uppercase;transform:rotate(-2deg);position:relative;z-index:2}
+.hero{position:relative;margin-top:44px}
+.photo{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:50% 58%;border:9px solid #fff;border-radius:36px;transform:rotate(-2deg);box-shadow:0 9px 0 var(--leaf)}
+.dino-hero{position:absolute;left:-10px;bottom:-56px;width:150px}
+.egg{position:absolute;right:-4px;bottom:-62px;width:104px;height:130px;transform:rotate(8deg)}
+.egg svg{position:absolute;inset:0}
+.egg span{position:absolute;left:0;right:0;top:38px;text-align:center;color:var(--leaf);font-weight:700;font-size:30px;line-height:1}
+.egg small{display:block;font-size:16px;font-weight:600;margin-top:4px}
+.title{text-align:center;margin:84px 0 0}
+.title .pre{color:var(--orange);font-weight:600;font-size:28px;line-height:1.1}
+.title h1{margin:2px 0 0;color:var(--leaf);font-weight:700;font-size:clamp(36px,11vw,50px);line-height:1.05}
+.intro{text-align:center;color:var(--muted);margin:14px 4px 0;font-size:18px}
+.cards{display:grid;gap:14px;margin-top:26px}
+.card{background:var(--card);border-radius:24px;padding:18px 18px 18px 64px;position:relative;box-shadow:0 4px 0 var(--line)}
+.card .ic{position:absolute;left:16px;top:18px;width:34px;height:34px;border-radius:50%;background:var(--ground);display:grid;place-items:center}
+.card h2{margin:0;font-size:15px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--orange)}
+.card .big{font-size:22px;font-weight:700;color:var(--leaf);line-height:1.2;margin-top:2px}
+.card .small{color:var(--muted);font-size:16px}
+.link-btn{display:inline-flex;align-items:center;gap:6px;margin-top:10px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--ground);color:var(--leaf-dark);font-weight:600;font-size:16px;text-decoration:none}
+.link-btn:hover{background:#F6E9C6}
+.rsvp{background:var(--leaf);color:#fff;border-radius:28px;padding:24px 20px 26px;margin-top:26px;position:relative}
+.rsvp h2{margin:0;font-size:28px;line-height:1.1}
+.rsvp p.lead{margin:6px 0 16px;color:#E3F3E6;font-size:17px}
+label{display:block;font-weight:600;font-size:16px;margin:14px 0 6px}
+input[type=text],textarea{width:100%;font:inherit;font-size:18px;color:var(--ink);background:#fff;border:3px solid transparent;border-radius:16px;padding:12px 14px;min-height:52px}
+textarea{min-height:84px;resize:vertical}
+input:focus,textarea:focus,button:focus-visible{outline:none;border-color:var(--sun);box-shadow:0 0 0 3px rgba(255,211,78,.45)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stepper{display:flex;align-items:center;background:#fff;border-radius:16px;overflow:hidden;min-height:52px}
+.stepper button{width:48px;height:52px;border:0;background:#E8F4EA;color:var(--leaf-dark);font:inherit;font-size:26px;font-weight:700;cursor:pointer}
+.stepper button:active{background:#D3EBD8}
+.stepper output{flex:1;text-align:center;color:var(--ink);font-size:22px;font-weight:700}
+.hint{font-size:14px;color:#D2EBD7;margin-top:4px;font-weight:400}
+.submit{display:block;width:100%;margin-top:22px;min-height:56px;border:0;border-radius:999px;background:var(--orange);color:#fff;font:inherit;font-size:21px;font-weight:700;cursor:pointer;box-shadow:0 6px 0 var(--orange-dark)}
+.submit:active{transform:translateY(3px);box-shadow:0 3px 0 var(--orange-dark)}
+.submit[disabled]{opacity:.7;cursor:wait}
+.msg{margin-top:14px;padding:12px 14px;border-radius:14px;font-size:16px;display:none}
+.msg.err{display:block;background:#FFE3D6;color:#7A2E0B}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.done{display:none;text-align:center;padding:8px 0 4px}
+.done .yay{font-size:30px;font-weight:700;line-height:1.1}
+.done p{color:#E3F3E6;margin:8px 0 0}
+.done button{margin-top:16px;background:transparent;border:2px solid #fff;color:#fff;border-radius:999px;min-height:44px;padding:0 18px;font:inherit;font-weight:600;cursor:pointer}
+.rsvp.ok form{display:none}.rsvp.ok .done{display:block}
+footer{position:relative;margin:30px -16px 0;height:220px}
+footer svg{position:absolute;inset:0;width:100%;height:100%}
+footer .roar{position:absolute;left:0;right:0;top:8px;text-align:center;font-weight:700;font-size:26px;color:var(--leaf)}
+</style>
+</head>
+<body>
+<main class="page">
+
+<svg class="web" viewBox="0 0 200 240" role="img" aria-label="Teia de aranha com uma aranhinha">
+  <path id="webpath" d="M0 0 L185 0 M0 0 L178.7 47.9 M0 0 L160.2 92.5 M0 0 L130.8 130.8 M0 0 L92.5 160.2 M0 0 L47.9 178.7 M0 0 L0 185 M34 0 Q29 3.8 32.8 8.8 Q27 11.2 29.4 17 Q23.2 17.8 24 24 Q17.8 23.2 17 29.4 Q11.2 27 8.8 32.8 Q3.8 29 0 34 M68 0 Q58 7.6 65.7 17.6 Q54 22.4 58.9 34 Q46.4 35.6 48.1 48.1 Q35.6 46.4 34 58.9 Q22.4 54 17.6 65.7 Q7.6 58 0 68 M102 0 Q87 11.4 98.5 26.4 Q81 33.6 88.3 51 Q69.6 53.4 72.1 72.1 Q53.4 69.6 51 88.3 Q33.6 81 26.4 98.5 Q11.4 87 0 102 M136 0 Q116 15.3 131.4 35.2 Q108.1 44.8 117.8 68 Q92.8 71.2 96.2 96.2 Q71.2 92.8 68 117.8 Q44.8 108.1 35.2 131.4 Q15.3 116 0 136 M170 0 Q144.9 19.1 164.2 44 Q135.1 55.9 147.2 85 Q116 89 120.2 120.2 Q89 116 85 147.2 Q55.9 135.1 44 164.2 Q19.1 144.9 0 170" fill="none" stroke="#24331F" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120.2" y1="120.2" x2="120.2" y2="186" stroke="#24331F" stroke-width="2"/>
+  <g fill="none" stroke="#24331F" stroke-width="3" stroke-linecap="round"><path d="M110 196 q-12 -8 -16 -2 M110 202 q-14 -2 -18 6 M112 208 q-10 6 -12 14 M114 212 q-4 8 -2 16"/><path d="M130 196 q12 -8 16 -2 M130 202 q14 -2 18 6 M128 208 q10 6 12 14 M126 212 q4 8 2 16"/></g>
+  <circle cx="120" cy="204" r="13" fill="#24331F"/><circle cx="120" cy="189" r="8" fill="#24331F"/>
+  <circle cx="116" cy="188" r="3" fill="#fff"/><circle cx="124" cy="188" r="3" fill="#fff"/>
+  <path d="M115 194 q5 4 10 0" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+</svg>
+
+<svg class="dino-top" viewBox="0 0 200 170" role="img" aria-label="Dinossauro laranja">
+  <use href="#dino" style="--b:#E8692A;--s:#FFD34E;--y:#FFD8B0"/>
+</svg>
+
+<span class="badge">Você está convidado!</span>
+
+<div class="hero">
+  <img class="photo" src="foto.jpg" alt="Gabriel e Miguel brincando de lutinha no parque" width="900" height="1200">
+  <svg class="dino-hero" viewBox="0 0 200 170" role="img" aria-label="Dinossauro verde">
+    <use href="#dino" style="--b:#2E8B4E;--s:#E8692A;--y:#C9EBA0"/>
+  </svg>
+  <div class="egg" aria-label="5 e 3 anos" role="img">
+    <svg viewBox="0 0 132 164" aria-hidden="true"><path d="M66 4 C110 4 128 70 128 102 C128 140 100 160 66 160 C32 160 4 140 4 102 C4 70 22 4 66 4 Z" fill="#fff" stroke="#2E8B4E" stroke-width="5"/><circle cx="34" cy="50" r="8" fill="#BFE39C"/><circle cx="98" cy="40" r="6" fill="#BFE39C"/><circle cx="104" cy="128" r="9" fill="#BFE39C"/><circle cx="26" cy="122" r="6" fill="#BFE39C"/></svg>
+    <span aria-hidden="true">5 &amp; 3<small>anos</small></span>
+  </div>
+</div>
+
+<div class="title">
+  <div class="pre">Aniversário</div>
+  <h1>Gabriel &amp; Miguel</h1>
+</div>
+<p class="intro">Os dinossauros vão rugir e as teias vão voar! Venha comemorar com a gente os 5 anos do Gabriel e os 3 anos do Miguel.</p>
+
+<section class="cards" aria-label="Informações da festa">
+  <div class="card">
+    <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E8B4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+    <h2>Quando</h2>
+    <div class="big">Sábado, 28 de novembro</div>
+    <div class="small">às 14h</div>
+  </div>
+  <div class="card">
+    <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E8B4E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+    <h2>Onde</h2>
+    <div class="big">Condomínio Vista Verde</div>
+    <div class="small">Rua Antônio Carlos Andreazza, 11<br>Jardim Vista Verde · Indaiatuba – SP</div>
+    <a class="link-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Ant%C3%B4nio+Carlos+Andreazza%2C+11%2C+Jardim+Vista+Verde%2C+Indaiatuba+-+SP" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+      Abrir no mapa
+    </a>
+  </div>
+</section>
+
+<section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+  <form id="form" novalidate>
+    <h2 id="rsvp-title">Confirme sua presença</h2>
+    <p class="lead">Conta pra gente quem vem rugir junto!</p>
+
+    <label for="nome">Seu nome</label>
+    <input type="text" id="nome" name="nome" autocomplete="name" required maxlength="100" placeholder="Ex.: Ana Souza">
+
+    <div class="row">
+      <div>
+        <label id="lbl-ad">Adultos</label>
+        <div class="stepper" data-field="adultos" data-min="1" data-max="10">
+          <button type="button" data-d="-1" aria-label="Menos um adulto">−</button>
+          <output aria-labelledby="lbl-ad" aria-live="polite">1</output>
+          <button type="button" data-d="1" aria-label="Mais um adulto">+</button>
+        </div>
+        <div class="hint">contando você</div>
+      </div>
+      <div>
+        <label id="lbl-cr">Crianças</label>
+        <div class="stepper" data-field="criancas" data-min="0" data-max="10">
+          <button type="button" data-d="-1" aria-label="Menos uma criança">−</button>
+          <output aria-labelledby="lbl-cr" aria-live="polite">0</output>
+          <button type="button" data-d="1" aria-label="Mais uma criança">+</button>
+        </div>
+      </div>
+    </div>
+
+    <label for="recado">Recado para os aniversariantes <span style="font-weight:400">(opcional)</span></label>
+    <textarea id="recado" name="recado" maxlength="500"></textarea>
+
+    <div class="hp" aria-hidden="true"><label for="site">Site</label><input type="text" id="site" name="site" tabindex="-1" autocomplete="off"></div>
+
+    <button class="submit" type="submit" id="btn">Confirmar presença</button>
+    <div class="msg" id="msg" role="alert"></div>
+  </form>
+
+  <div class="done" aria-live="polite">
+    <div class="yay">Oba! Presença confirmada</div>
+    <p id="done-txt">Vamos te esperar no dia 28!</p>
+    <button type="button" id="again">Confirmar outra pessoa</button>
+  </div>
+</section>
+
+<footer aria-hidden="true">
+  <div class="roar">Vem rugir com a gente!</div>
+  <svg viewBox="0 0 480 220" preserveAspectRatio="xMidYMax slice">
+    <path d="M0 150 Q80 115 170 140 T340 132 T480 122 L480 220 L0 220 Z" fill="#7CC35A"/>
+    <path d="M0 178 Q110 146 230 170 T480 160 L480 220 L0 220 Z" fill="#2E8B4E"/>
+    <g transform="translate(40 62) scale(0.62)"><use href="#dino" style="--b:#2E8B4E;--s:#E8692A;--y:#C9EBA0"/></g>
+    <g transform="translate(440 80) scale(-0.5 0.5)"><use href="#dino" style="--b:#E8692A;--s:#FFD34E;--y:#FFD8B0"/></g>
+  </svg>
+</footer>
+
+</main>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="dino">
+      <path d="M48 108 Q10 112 2 146 Q30 132 58 132 Z" style="fill:var(--b)"/>
+      <path d="M60 70 l10 -16 l8 18 z M80 62 l12 -18 l8 20 z M102 60 l12 -16 l6 20 z" style="fill:var(--s)"/>
+      <ellipse cx="95" cy="112" rx="58" ry="44" style="fill:var(--b)"/>
+      <ellipse cx="102" cy="122" rx="34" ry="26" style="fill:var(--y)"/>
+      <rect x="118" y="58" width="34" height="50" rx="16" style="fill:var(--b)"/>
+      <circle cx="148" cy="52" r="36" style="fill:var(--b)"/>
+      <circle cx="158" cy="44" r="9" fill="#fff"/><circle cx="161" cy="45" r="5" fill="#24331F"/>
+      <path d="M150 68 Q166 78 180 64" stroke="#24331F" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M136 104 q14 4 18 -6" style="stroke:var(--b)" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <rect x="64" y="140" width="20" height="26" rx="9" style="fill:var(--b)"/>
+      <rect x="108" y="140" width="20" height="26" rx="9" style="fill:var(--b)"/>
+    </g>
+  </defs>
+</svg>
+
+<script src="config.js"></script>
+<script>
+(function(){
+  var vals = {adultos:1, criancas:0};
+  document.querySelectorAll('.stepper').forEach(function(st){
+    var f = st.dataset.field, min = +st.dataset.min, max = +st.dataset.max, out = st.querySelector('output');
+    st.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click', function(){
+        vals[f] = Math.min(max, Math.max(min, vals[f] + (+b.dataset.d)));
+        out.textContent = vals[f];
+      });
+    });
+  });
+
+  var form = document.getElementById('form'), btn = document.getElementById('btn'),
+      msg = document.getElementById('msg'), box = document.getElementById('rsvp');
+
+  function showErr(t){ msg.textContent = t; msg.className = 'msg err'; }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    msg.className = 'msg';
+    if (document.getElementById('site').value) return; // robô
+    var nome = document.getElementById('nome').value.trim();
+    if (nome.length < 2) { showErr('Escreva seu nome, por favor.'); document.getElementById('nome').focus(); return; }
+    var cfg = window.CONFIG || {};
+    if (!cfg.supabaseUrl || !cfg.supabaseAnonKey) { showErr('A confirmação ainda não está ativa. Tente de novo mais tarde.'); return; }
+    btn.disabled = true; btn.textContent = 'Enviando...';
+    fetch(cfg.supabaseUrl.replace(/\/$/,'') + '/rest/v1/confirmacoes', {
+      method: 'POST',
+      headers: {
+        'apikey': cfg.supabaseAnonKey,
+        'Authorization': 'Bearer ' + cfg.supabaseAnonKey,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify({
+        nome: nome,
+        adultos: vals.adultos,
+        criancas: vals.criancas,
+        recado: document.getElementById('recado').value.trim() || null
+      })
+    }).then(function(r){
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      var total = vals.adultos + vals.criancas;
+      document.getElementById('done-txt').textContent =
+        nome.split(' ')[0] + ', anotamos ' + total + (total === 1 ? ' pessoa' : ' pessoas') + '. Vamos te esperar no dia 28!';
+      box.classList.add('ok');
+      box.scrollIntoView({behavior:'smooth', block:'center'});
+    }).catch(function(){
+      showErr('Não deu para enviar agora. Confira sua internet e tente de novo.');
+    }).finally(function(){
+      btn.disabled = false; btn.textContent = 'Confirmar presença';
+    });
+  });
+
+  document.getElementById('again').addEventListener('click', function(){
+    form.reset(); vals.adultos = 1; vals.criancas = 0;
+    document.querySelectorAll('.stepper output').forEach(function(o,i){ o.textContent = i ? 0 : 1; });
+    box.classList.remove('ok');
+    document.getElementById('nome').focus();
+  });
+})();
+</script>
+</body>
+</html>
