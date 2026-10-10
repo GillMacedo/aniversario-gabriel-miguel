@@ -203,7 +203,14 @@ footer .roar{position:absolute;left:0;right:0;top:8px;text-align:center;font-wei
   </defs>
 </svg>
 
-<script src="config.js"></script>
+<script>
+// Supabase (Settings › API Keys). A chave "publishable" é pública por natureza:
+// as regras (RLS) do banco só permitem INSERIR confirmações — ninguém lê a lista pelo site.
+window.CONFIG = {
+  supabaseUrl: "https://qzpdlolxegsdajkxfyst.supabase.co",
+  supabaseAnonKey: "sb_publishable_Go6E9cPbDl1U7r-7-x74kw_TIkNCfQo"
+};
+</script>
 <script>
 (function(){
   var vals = {adultos:1, criancas:0};
